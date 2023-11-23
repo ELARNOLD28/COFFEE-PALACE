@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabarak University Course Registration</title>
+
+    <style>
+        body {
+            background-color: #3498db; /* Change background color */
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #fff; /* Change text color */
+        }
+
+        form {
+            background-color: #ecf0f1; /* Change form background color */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Rest of the styles remain the same */
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Kabarak University Course Registration Form</h2>
+
+    <form action="#" method="post">
+        <label for="regNumber">Registration Number:</label>
+        <input type="text" id="regNumber" name="regNumber" required><br><br>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Lecturer</th>
+                    <th>Select</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Existing courses -->
+                <tr>
+                    <td>CSC101</td>
+                    <td>Introduction to Computer Science</td>
+                    <td>Dr. John Doe</td>
+                    <td><input type="checkbox" name="courses[]" value="CSC101"></td>
+                </tr>
+                <tr>
+                    <td>MTH201</td>
+                    <td>Calculus I</td>
+                    <td>Prof. Jane Smith</td>
+                    <td><input type="checkbox" name="courses[]" value="MTH201"></td>
+                </tr>
+                <!-- Additional courses -->
+                <tr>
+                    <td>COMP413</td>
+                    <td>Artificial Intelligence</td>
+                    <td>Prof. Andrew Kipkebut</td>
+                    <td><input type="checkbox" name="courses[]" value="COMP413"></td>
+                </tr>
+                <tr>
+                    <td>BGMT414</td>
+                    <td>Entrepreneurship</td>
+                    <td>John Mwendwa</td>
+                    <td><input type="checkbox" name="courses[]" value="BGMT414"></td>
+                </tr>
+                <tr>
+                    <td>INTE414</td>
+                    <td>Research Proposal</td>
+                    <td>Cleophas Mochoge</td>
+                    <td><input type="checkbox" name="courses[]" value="INTE414"></td>
+                </tr>
+                <!-- Add more courses as needed -->
+
+            </tbody>
+        </table>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
+
+
